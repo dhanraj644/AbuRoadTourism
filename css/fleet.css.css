@@ -1,0 +1,384 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+div pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+figure,
+header,
+nav,
+section,
+article,
+aside,
+footer,
+figcaption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+header,
+nav,
+section,
+article,
+aside,
+footer,
+hgroup {
+    display: block;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background-color: #fff;
+    font-size: 16px;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+ul {
+    margin-bottom: 0px;
+}
+
+p {
+    font-size: 14px;
+    line-height: 25px;
+    color: #7a7a7a;
+}
+
+
+
+#call-to-action {
+    padding: 120px 0px;
+    background-image: url(../images/cta-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.cta-content h2 {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.cta-content h2 em {
+    font-style: normal;
+    color: #ed563b;
+}
+
+.cta-content p {
+    font-size: 16px;
+    color: #fff;
+    margin: 15px 0px 25px 0px;
+}
+
+/*
+--------------------------------------------
+Our Classes
+--------------------------------------------
+*/
+/* 
+icon
+*/
+
+.icon{
+    font-size: 50px;
+    padding: 10px;
+    margin-left: 0px;
+    margin-top: 50px;
+}
+.icon >ul>i{
+    padding: 20px;
+}
+/* 
+---------------------------------------------
+schedule
+--------------------------------------------- 
+*/
+
+.section-bg {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.section-bg:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(35, 45, 57, 0.8);
+}
+
+.section-bg>form,
+.section-bg .container {
+    position: relative;
+    z-index: 2
+}
+
+#schedule {
+    padding: 0px 0px 140px 0px;
+}
+
+#schedule table {
+    width: 100%;
+    text-align: center;
+    border: 1px solid #fff;
+}
+
+#schedule table tbody {
+    border-top: 1px solid #fff;
+}
+
+#schedule table tbody tr {
+    border-bottom: 1px solid #fff;
+}
+
+#schedule table tbody tr td {
+    border-right: 1px solid #fff;
+    height: 100px;
+}
+
+#schedule table tr td {
+    color: #fff;
+    font-size: 13px;
+    text-transform: capitalize;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+}
+
+.schedule-table.filtering .ts-item {
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.schedule-table.filtering .ts-item.show {
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+#schedule .filters {
+    margin-bottom: 40px;
+}
+
+#schedule .filters ul {
+    padding: 0;
+    text-align: center;
+}
+
+#schedule .filters ul li {
+    list-style: none;
+    display: inline;
+    cursor: pointer;
+    position: relative;
+    margin-right: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: capitalize;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+#schedule .filters ul li:after {
+    content: "/";
+    margin-left: 10px;
+    color: #fff;
+}
+
+#schedule .filters ul li:last-child {
+    margin-right: 0px;
+}
+
+#schedule .filters ul li:last-child::after {
+    display: none;
+}
+
+#schedule .filters ul li.active,
+#schedule .filters ul li:hover {
+    color: #ed563b;
+}
+
+#schedule .filters-content {
+    margin-top: 50px;
+}
+
+#schedule .filters-content .show {
+    opacity: 1;
+    visibility: visible;
+    transition: all 350ms;
+}
+
+#schedule .filters-content .hide {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 350ms;
+}
+
+/* 
+---------------------------------------------
+trainers
+--------------------------------------------- 
+*/
+
+#trainers {
+    padding-bottom: 90px;
+}
+
+#trainers .trainer-item {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+#trainers .trainer-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+#trainers .trainer-item span {
+    font-size: 13px;
+    font-weight: 500;
+    color: #ed563b;
+    display: inline-block;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+#trainers .trainer-item h4 {
+    font-size: 19px;
+    font-weight: 600;
+    color: #232d39;
+    letter-spacing: 0.5px;
+    margin-bottom: 18px;
+}
+
+#trainers .trainer-item p {
+    margin-bottom: 20px;
+}
+
+ul.social-icons li {
+    display: inline-block;
+    margin-right: 12px;
+}
+
+ul.social-icons li:last-child {
+    margin-right: 0px;
+}
+
+ul.social-icons li a {
+    color: #232d39;
+    transition: all .3s;
+}
+
+ul.social-icons li a:hover {
+    color: #ed563b;
+}
+
+
