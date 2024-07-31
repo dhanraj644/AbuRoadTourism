@@ -14,7 +14,7 @@
 
     <head>
         <meta charset="utf-8">
-        <title>DASHMIN - Bootstrap Admin Template</title>
+        <title>ABU ROAD TOURISM</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
@@ -56,23 +56,17 @@
             <!-- Sidebar Start -->
             <div class="sidebar pe-4 pb-3">
                 <nav class="navbar bg-light navbar-light">
-                    <a href="l" class="navbar-brand mx-4 mb-3">
-                        <h3 class="text-primary"><i class="fa fa-hashtag me-2"></i>DASHMIN</h3>
+                    <a href="" class="navbar-brand mx-4 mb-3">
+                        <h3 class="text-primary"><i class="fa fa-hashtag me-2"></i>ABU ROAD</h3>
                     </a>
                     <div class="d-flex align-items-center ms-4 mb-4">
-                        <div class="position-relative">
-                            <img class="rounded-circle" src="" alt="" style="width: 40px; height: 40px;">
-                            <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
-                        </div>
-                        <div class="ms-3">
-                            <h6 class="mb-0"></h6>
-                            <span>Admin</span>
-                        </div>
+                       
+                      
                     </div>
                     <div class="navbar-nav w-100">
                         <a href="form.php" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>car</a>
                         
-                        <a href="hotel.php" class="nav-item nav-link"><i class="fa fa-th me-2"></i>hotel</a>
+                        <a href="hotel.php" class="nav-item nav-link "><i class="fa fa-th me-2"></i>hotel</a>
                         <a href="destination.php" class="nav-item nav-link "><i class="fa fa-keyboard me-2"></i>destination</a>
                    
                         
@@ -96,9 +90,8 @@
                     <div class="navbar-nav align-items-center ms-auto">
                      
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link ">
-                               
-                                <span class="d-none d-lg-inline-flex">log out</span>
+                            <a href="./logout.php" class="nav-link ">
+                                                               <span class="d-none d-lg-inline-flex">log out</span>
                             </a>
                             
                         </div>
@@ -106,7 +99,7 @@
                 </nav>
                 <!-- Navbar End -->
 
-
+       
                 <!-- Form Start -->
                 <div class="container-fluid pt-4 px-4">
                     <div class="row g-4">
@@ -115,7 +108,7 @@
                                 <h6 class="mb-4">Basic Form</h6>
                                 <form action="car.php" method="POST" enctype="multipart/form-data">
                                     <div class="mb-3">
-                                        <label for="file" class="form-label">enter car image</label>
+                                        <label for="file" class="form-label">Enter Car Image</label>
                                         <input type="file" class="form-control" name="file" 
                                         >
                                         <div  class="form-text">*image size 363x261
@@ -123,29 +116,29 @@
                                         
                                     </div>
                                     <div class="mb-3">
-                                        <label for="" class="form-label">enter car name</label>
-                                        <input type="text" class="form-control"  name="carname"
+                                        <label for="" class="form-label">Enter car name</label>
+                                        <input type="text" class="form-control"  name="carname" require
                                         >
                                         
                                     </div>
                                     <div class="mb-3">
                                         <label for="" class="form-label">enter owener name</label>
-                                        <input type="text" class="form-control"  name="name"
+                                        <input type="text" class="form-control"  name="name" require
                                         >
 
                                     </div>
                                     <div class="mb-3">
                                         <label class="form-label">enter mobile no</label>
-                                        <input type="number" class="form-control"  name="number">
+                                        <input type="number" class="form-control"  name="number" require>
                                     </div>
 
                                     <div class="mb-3">
                                         <label class="form-label">enter person siting</label>
-                                        <input type="number" class="form-control" name="person" >
+                                        <input type="number" class="form-control" name="person" require>
                                     </div>
                                     <div class="mb-3">
                                         <label class="form-label">enter exit door</label>
-                                        <input type="number" class="form-control" name="door" >
+                                        <input type="number" class="form-control" name="door" require>
                                     </div>
                                     
                                     <button type="submit" name="submit" value="submit" class="btn btn-primary">ADD</button>
@@ -154,7 +147,7 @@
                         </div>
                         </div>
                         </div>  
-
+                        <br>
                         <div class="col-12">
                             <div class="bg-light rounded h-100 p-4">
                                 <h6 class="mb-4">Responsive Table</h6>
@@ -201,11 +194,10 @@
                     <div class="bg-light rounded-top p-4">
                         <div class="row">
                             <div class="col-12 col-sm-6 text-center text-sm-start">
-                                &copy; <a href="#">Your Site Name</a>, All Right Reserved. 
+                                &copy; <a href="../index.php">Abu Road Tourism</a>, All Right Reserved. 
                             </div>
                             <div class="col-12 col-sm-6 text-center text-sm-end">
-                                <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                                Designed By <a href="https://htmlcodex.com">HTML Codex</a>
+                                
                             </div>
                         </div>
                     </div>

@@ -9,7 +9,6 @@
     <!-- animation -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
-
 <body>
     <?php include('header.html') ?>
     <div class="inner-banner-wrap" style="height: 500px;">
@@ -25,8 +24,6 @@
     </div>
     <br><br><br>
     <center>
-
-
         <h2>ABU ROAD BUS TIME TABLE</h2>
     </center>
     <hr>

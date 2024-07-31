@@ -1,6 +1,6 @@
 
 <?php include('connection.php');
-$sql="select * from destination" ;
+$sql="select * from destinationdetails" ;
  
 
 $res=mysqli_query($conn,$sql);
@@ -30,7 +30,7 @@ if($res)
 
 <head>
     <meta charset="utf-8">
-    <title>DASHMIN - Bootstrap Admin Template</title>
+    <title>ABU ROAD TOURISM</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -73,17 +73,11 @@ if($res)
         <div class="sidebar pe-4 pb-3">
                 <nav class="navbar bg-light navbar-light">
                     <a href="" class="navbar-brand mx-4 mb-3">
-                        <h3 class="text-primary"><i class="fa fa-hashtag me-2"></i>DASHMIN</h3>
+                        <h3 class="text-primary"><i class="fa fa-hashtag me-2"></i>ABU ROAD</h3>
                     </a>
                     <div class="d-flex align-items-center ms-4 mb-4">
-                        <div class="position-relative">
-                            <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
-                            <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
-                        </div>
-                        <div class="ms-3">
-                            <!-- <h6 class="mb-0">Jhon Doe</h6> -->
-                            <span>Admin</span>
-                        </div>
+                       
+                        
                     </div>
                     <div class="navbar-nav w-100">
                         <a href="form.php" class="nav-item nav-link"><i class="fa fa-tachometer-alt me-2"></i>car</a>
@@ -108,83 +102,15 @@ if($res)
                 <a href="#" class="sidebar-toggler flex-shrink-0">
                     <i class="fa fa-bars"></i>
                 </a>
-                <form class="d-none d-md-flex ms-4">
-                    <input class="form-control border-0" type="search" placeholder="Search">
-                </form>
+                
                 <div class="navbar-nav align-items-center ms-auto">
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                            <i class="fa fa-envelope me-lg-2"></i>
-                            <span class="d-none d-lg-inline-flex">Message</span>
+                    
+                   
+                    <div class="nav-item ">
+                        <a href="./logout.php" class="nav-link" >
+                                <span class="d-none d-lg-inline-flex">Log Out</span>
                         </a>
-                        <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
-                            <a href="#" class="dropdown-item">
-                                <div class="d-flex align-items-center">
-                                    <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
-                                    <div class="ms-2">
-                                        <h6 class="fw-normal mb-0">Jhon send you a message</h6>
-                                        <small>15 minutes ago</small>
-                                    </div>
-                                </div>
-                            </a>
-                            <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item">
-                                <div class="d-flex align-items-center">
-                                    <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
-                                    <div class="ms-2">
-                                        <h6 class="fw-normal mb-0">Jhon send you a message</h6>
-                                        <small>15 minutes ago</small>
-                                    </div>
-                                </div>
-                            </a>
-                            <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item">
-                                <div class="d-flex align-items-center">
-                                    <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
-                                    <div class="ms-2">
-                                        <h6 class="fw-normal mb-0">Jhon send you a message</h6>
-                                        <small>15 minutes ago</small>
-                                    </div>
-                                </div>
-                            </a>
-                            <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item text-center">See all message</a>
-                        </div>
-                    </div>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                            <i class="fa fa-bell me-lg-2"></i>
-                            <span class="d-none d-lg-inline-flex">Notificatin</span>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
-                            <a href="#" class="dropdown-item">
-                                <h6 class="fw-normal mb-0">Profile updated</h6>
-                                <small>15 minutes ago</small>
-                            </a>
-                            <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item">
-                                <h6 class="fw-normal mb-0">New user added</h6>
-                                <small>15 minutes ago</small>
-                            </a>
-                            <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item">
-                                <h6 class="fw-normal mb-0">Password changed</h6>
-                                <small>15 minutes ago</small>
-                            </a>
-                            <hr class="dropdown-divider">
-                            <a href="#" class="dropdown-item text-center">See all notifications</a>
-                        </div>
-                    </div>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                            <img class="rounded-circle me-lg-2" src="" alt="" style="width: 40px; height: 40px;">
-                            <span class="d-none d-lg-inline-flex">ADMIN</span>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
-                            <a href="#" class="dropdown-item">My Profile</a>
-                            <a href="#" class="dropdown-item">Settings</a>
-                            <a href="#" class="dropdown-item">Log Out</a>
-                        </div>
+                       
                     </div>
                 </div>
             </nav>
@@ -225,52 +151,40 @@ if($res)
                         </div>
                     </div>
 
-                    <!-- <div class="col-sm-12 col-xl-6">
-                        <div class="bg-light rounded h-100 p-4">
-                            <h6 class="mb-4">destination details</h6>
-                            <form action=".php" method="POST" enctype="multipart/form-data">
-                                <div class="mb-3">
-                                    <label for="file" class="form-label">enter destination image</label>
-                                    <input type="file" class="form-control" name="file" 
-                                      >
-                                      <div  class="form-text">*image size 500x510
-                                    </div>
-                                    
-                                </div>
-                                <div class="mb-3">
-                                    <label for="" class="form-label">enter destination name</label>
-                                    <input type="text" class="form-control"  name="hotelname"
-                                       >
-                                    
-                                </div>
-                                <div class="mb-3">
-                                    <label for="" class="form-label">enter location</label>
-                                    <input type="text" class="form-control"  name="distance"
-                                       >
-                                       <div  class="form-text">
-                                    </div>
-
-                                </div>
-                                
-                                
-                                <button type="submit" name="send" value="send" class="btn btn-primary">ADD</button>
-                            </form>
-                        </div>
-                    </div> -->
+                  
                     </div>
                     </div>  
-
+<br>
                     <div class="col-12">
                         <div class="bg-light rounded h-100 p-4">
-                            <h6 class="mb-4">Responsive Table</h6>
+                            <h6 class="mb-4">Destination Table</h6>
                             <div class="table-responsive">
                                 <table class="table">
                                     <thead>
                                         <tr>
-                                            <th scope="col">srno.</th>
-                                            <th scope="col">hotelimage</th>
-                                            <th scope="col">hotelname</th>
-                                            <th scope="col">distance</th>
+                                        <th scope="col">srno.</th>
+                                            <th scope="col">destinationname</th>
+                                            <th scope="col">name</th>
+                                            <th scope="col">imgbanner</th>
+                                            <th scope="col">history</th>
+                                            <th scope="col">photo</th>
+                                            <th scope="col">360view</th>
+                                            <th scope="col">video</th>
+                                            <th scope="col">img1</th>
+                                            <th scope="col">img2</th>
+                                            <th scope="col">img3</th>
+                                            <th scope="col">img4</th>
+                                            <th scope="col">img5</th>
+                                            <th scope="col">img6</th>
+                                            <th scope="col">gallary1</th>
+                                            <th scope="col">gallary2</th>
+                                            <th scope="col">gallary3</th>
+                                            <th scope="col">gallary4</th>
+                                            <th scope="col">gallary5</th>
+                                            <th scope="col">gallary6</th>
+                                            <th scope="col">slider1</th>
+                                            <th scope="col">slider2</th>
+                                            <th scope="col">slider3</th>
                                             
                                             <th scope="col" colspan="2">action</th>
                                             
@@ -279,10 +193,29 @@ if($res)
                                     <tbody>
                                     <?php while( $row=mysqli_fetch_assoc($res)){?>
                                         <tr>
-                                            <th scope="row"><?php echo $row['id']?></th>
-                                            <td><?php echo $row['img']?></td>
+                                        <th scope="row"><?php echo $row['id']?></th>
+                                            <td><?php echo $row['destinationname']?></td>
                                             <td><?php echo $row['name']?></td>
-                                            <td><?php echo $row['city']?></td>
+                                            <td><?php echo $row['imgbanner']?></td>
+                                            <td><?php echo $row['']?></td>
+                                            <td><?php echo $row['photo']?></td>
+                                            <td><?php echo $row['360view']?></td>
+                                            <td><?php echo $row['video']?></td>
+                                            <td><?php echo $row['img1']?></td>
+                                            <td><?php echo $row['img2']?></td>
+                                            <td><?php echo $row['img3']?></td>
+                                            <td><?php echo $row['img4']?></td>
+                                            <td><?php echo $row['img5']?></td>
+                                            <td><?php echo $row['img6']?></td>
+                                            <td><?php echo $row['gallary1']?></td>
+                                            <td><?php echo $row['gallary2']?></td>
+                                            <td><?php echo $row['gallary3']?></td>
+                                            <td><?php echo $row['gallary4']?></td>
+                                            <td><?php echo $row['gallary5']?></td>
+                                            <td><?php echo $row['gallary6']?></td>
+                                            <td><?php echo $row['slider1']?></td>
+                                            <td><?php echo $row['slider2']?></td>
+                                            <td><?php echo $row['slider3']?></td>
                     
                                            
                                             <td><a href="elupdate.php?id=<?php echo $row['id']?>"  class="btn btn-primary">update</button></td></a>
@@ -301,11 +234,10 @@ if($res)
                 <div class="bg-light rounded-top p-4">
                     <div class="row">
                         <div class="col-12 col-sm-6 text-center text-sm-start">
-                            &copy; <a href="#">Your Site Name</a>, All Right Reserved. 
+                            &copy; <a href="../index.php">Abu Road Tourism</a>, All Right Reserved. 
                         </div>
                         <div class="col-12 col-sm-6 text-center text-sm-end">
-                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                            Designed By <a href="https://htmlcodex.com">HTML Codex</a>
+                           
                         </div>
                     </div>
                 </div>
