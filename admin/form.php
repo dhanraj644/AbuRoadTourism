@@ -1,6 +1,10 @@
 
     <?php 
-    
+    session_start();
+    if (!isset($_SESSION['pass'])) {
+        header("Location: login.php");
+        exit();
+    }
     include('connection.php');
     $sql="select * from car" ;
     

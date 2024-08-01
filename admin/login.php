@@ -14,11 +14,14 @@ if(isset($_POST['submit']))
     $num=mysqli_num_rows($res);
     if($num == 1)
     {
+        $_SESSION['pass'] = $pass;
         header("location:form.php");
     }
     else{
-        echo "error";
+        echo "<script>alert('Wrong Password !');</script>";
     }
+    
+    $conn->close();
 }
 
 ?>
@@ -68,6 +71,7 @@ if(isset($_POST['submit']))
 
         <!-- Sign In Start -->
         <div class="container-fluid">
+           <h1 ><a href="../index.php"> <i class="bi bi-house-fill" ></i></a></h1> 
             <div class="row h-100 align-items-center justify-content-center" style="min-height: 100vh;">
                 <div class="col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4">
                     <div class="bg-light rounded p-4 p-sm-5 my-4 mx-3">
@@ -79,11 +83,11 @@ if(isset($_POST['submit']))
                         </div>
                         <form action="" method="POST">
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="floatingInput" name="email" placeholder="name@example.com">
+                            <input type="email" class="form-control" id="floatingInput" name="email" placeholder="name@example.com" require>
                             <label for="floatingInput">Email address</label>
                         </div>
                         <div class="form-floating mb-4">
-                            <input type="password" class="form-control" id="floatingPassword"  name="password" placeholder="Password">
+                            <input type="password" class="form-control" id="floatingPassword"  name="password" placeholder="Password" require>
                             <label for="floatingPassword">Password</label>
                         </div>
                         <!-- <div class="d-flex align-items-center justify-content-between mb-4">

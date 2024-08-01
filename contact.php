@@ -1,3 +1,20 @@
+
+<?php
+
+$to = "malidhanraj644@gmail.com";
+$subject = "Test Mail";
+$message = "Hello, this is a test email!";
+$headers = "From: sender@example.com" . "\r\n" .
+           "Reply-To: sender@example.com" . "\r\n" .
+           "X-Mailer: PHP/" . phpversion();
+
+if(mail($to, $subject, $message, $headers)) {
+    echo "Email sent successfully!";
+} else {
+    echo "Failed to send email.";
+}
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
