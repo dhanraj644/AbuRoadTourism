@@ -118,6 +118,9 @@ if($res)
 
 
             <!-- Form Start -->
+             <form action="">
+
+             
             <div class="container-fluid pt-4 px-4">
                 <div class="row g-4">
                     <div class="col-sm-12 col-xl-6">
@@ -125,35 +128,143 @@ if($res)
                             <h6 class="mb-4">Basic Form</h6>
                             <form action="car.php" method="POST" enctype="multipart/form-data">
                                 <div class="mb-3">
-                                    <label for="file" class="form-label">enter destination image</label>
-                                    <input type="file" class="form-control" name="file" 
+                                    <label for="file" class="form-label">enter destination name</label>
+                                    <input type="text" class="form-control" name="file" 
                                       >
                                       <div  class="form-text">*image size 500x510
                                     </div>
                                     
                                 </div>
                                 <div class="mb-3">
-                                    <label for="" class="form-label">enter destination name</label>
+                                    <label for="" class="form-label">Destination Name in hindi</label>
                                     <input type="text" class="form-control"  name="name"
                                        >
                                     
                                 </div>
                                 <div class="mb-3">
-                                    <label for="" class="form-label">enter location</label>
-                                    <input type="text" class="form-control"  name="location"
+                                    <label for="" class="form-label">Image Banner</label>
+                                    <input type="file" class="form-control"  name="location"
                                        >
                                        <div  class="form-text">
                                     </div>
 
                                 </div>
+                                <div class="mb-3">
+                                    <label for="" class="form-label">History</label>
+                                    <input type="text" class="form-control"  name="location"
+                                       >
+                                       <div  class="form-text">
+                                    </div>
+
+                                </div> <div class="mb-3">
+                                    <label for="" class="form-label">Photo</label>
+                                    <input type="file" class="form-control"  name="location"
+                                       >
+                                       <div  class="form-text">
+                                    </div>
+
+                                </div> <div class="mb-3">
+                                    <label for="" class="form-label">360view</label>
+                                    <input type="text" class="form-control"  name="location"
+                                       >
+                                       <div  class="form-text">
+                                    </div>
+
+                                </div> <div class="mb-3">
+                                    <label for="" class="form-label">Video link</label>
+                                    <input type="text" class="form-control"  name="location"
+                                       >
+                                       <div  class="form-text">
+                                    </div>
+
+                                </div> 
                                 <button type="submit" name="add" value="add" class="btn btn-primary">ADD</button>
                             </form>
                         </div>
                     </div>
 
-                  
+                    <div class="col-sm-12 col-xl-6">
+                        <div class="bg-light rounded h-100 p-4">
+                            <h6 class="mb-4">Basic Form</h6>
+                          
+                                
+                            <div class="mb-3">
+                                    <label for="" class="form-label">image1</label>
+                                    <input type="file" class="form-control"  name="location"
+                                       >
+                                       <div  class="form-text">
+                                    </div>
+
+                                </div> <div class="mb-3">
+                                    <label for="" class="form-label">image2</label>
+                                    <input type="file" class="form-control"  name="location"
+                                       >
+                                       <div  class="form-text">
+                                    </div>
+
+                                </div> <div class="mb-3">
+                                    <label for="" class="form-label">image3</label>
+                                    <input type="file" class="form-control"  name="location"
+                                       >
+                                       <div  class="form-text">
+                                    </div>
+
+                                </div> <div class="mb-3">
+                                    <label for="" class="form-label">image4</label>
+                                    <input type="file" class="form-control"  name="location"
+                                       >
+                                       <div  class="form-text">
+                                    </div>
+
+                                </div> <div class="mb-3">
+                                    <label for="" class="form-label">image5</label>
+                                    <input type="file" class="form-control"  name="location"
+                                       >
+                                       <div  class="form-text">
+                                    </div>
+
+                                </div> <div class="mb-3">
+                                    <label for="" class="form-label">image6</label>
+                                    <input type="file" class="form-control"  name="location"
+                                       >
+                                       <div  class="form-text">
+                                    </div>
+
+                                </div> <div class="mb-3">
+                                    <label for="" class="form-label">gallary1</label>
+                                    <input type="text" class="form-control"  name="location"
+                                       >
+                                       <div  class="form-text">
+                                    </div>
+
+                                </div> <div class="mb-3">
+                                    <label for="" class="form-label">gallary2</label>
+                                    <input type="text" class="form-control"  name="location"
+                                       >
+                                       <div  class="form-text">
+                                    </div>
+
+                                </div> <div class="mb-3">
+                                    <label for="" class="form-label">gallary3</label>
+                                    <input type="text" class="form-control"  name="location"
+                                       >
+                                       <div  class="form-text">
+                                    </div>
+
+                                </div> <div class="mb-3">
+                                    <label for="" class="form-label">gallary4</label>
+                                    <input type="text" class="form-control"  name="location"
+                                       >
+                                       <div  class="form-text">
+                                    </div>
+
+                                </div> 
+
+                        </div>
+                    </div>
                     </div>
                     </div>  
+                    </form>
 <br>
                     <div class="col-12">
                         <div class="bg-light rounded h-100 p-4">
