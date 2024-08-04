@@ -400,7 +400,7 @@ section {
             <!-- ***Home gallery html start from here*** -->
 
             <br><br><br>
-            <section class="home-gallery" data-aos-anchor-placement="center-bottom">
+            <section class="home-gallery" data-aos-anchor-placement="center-bottom" style="background-color: gainsboro;">
                <div class="container" data-aos="zoom-in-up">
                   <div class="row">
                      <center>

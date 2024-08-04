@@ -100,7 +100,7 @@
                              </div>
                 </div>
                 <div class="row row-50" data-lightgallery="group">
-                    <div class="col-sm-12 col-md-6 col-lg-4" data-aos="fade-up">
+                    <div class="col-sm-12 col-md-6 col-lg-4 gal" data-aos="fade-up">
                         <a class="gallery-item titled-gallery-item" href="<?php echo $row['img1']?>"  data-fancybox="gallery ">
                             <div class="gallery-item-image">
                                 <figure><img src="<?php echo $row['img1']?>" alt=""  style="width: 570px; height:350px; " />
@@ -111,7 +111,7 @@
                         </a>
                      
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4" data-aos="fade-up">
+                    <div class="col-sm-12 col-md-6 col-lg-4 gal" data-aos="fade-up">
                         <a class="gallery-item titled-gallery-item" href="<?php echo $row['img2']?>"  data-fancybox="gallery ">
                             <div class="gallery-item-image">
                                 <figure><img src="<?php echo $row['img2']?>" alt=""   style="width: 570px; height:350px"/>
@@ -122,7 +122,7 @@
                         </a>
                      
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4" data-aos="fade-up">
+                    <div class="col-sm-12 col-md-6 col-lg-4 gal" data-aos="fade-up">
                         <a class="gallery-item titled-gallery-item" href="<?php echo $row['img3']?>" data-fancybox="gallery ">
                             <div class="gallery-item-image">
                                 <figure><img src="<?php echo $row['img3']?>" alt=""   style="width: 570px; height:350px" />
@@ -133,7 +133,7 @@
                         </a>
                      
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4" data-aos="fade-up">
+                    <div class="col-sm-12 col-md-6 col-lg-4 gal" data-aos="fade-up">
                         <a class="gallery-item titled-gallery-item" href="<?php echo $row['img4']?>" data-fancybox="gallery ">
                             <div class="gallery-item-image">
                                 <figure><img src="<?php echo $row['img4']?>" alt=""   style="width: 570px; height:350px"/>
@@ -144,7 +144,7 @@
                         </a>
                      
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4" data-aos="fade-up">
+                    <div class="col-sm-12 col-md-6 col-lg-4 gal" data-aos="fade-up">
                         <a class="gallery-item titled-gallery-item" href="<?php echo $row['img5']?>" data-fancybox="gallery ">
                             <div class="gallery-item-image">
                                 <figure><img src="<?php echo $row['img5']?>" alt=""   style="width: 570px; height:350px" />
@@ -155,7 +155,7 @@
                         </a>
              
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4"data-aos="fade-up">
+                    <div class="col-sm-12 col-md-6 col-lg-4 gal"data-aos="fade-up">
                         <a class="gallery-item titled-gallery-item" href="<?php echo $row['img6']?>" data-fancybox="gallery ">
                             <div class="gallery-item-image">
                                 <figure><img src="<?php echo $row['img6']?>" alt=""   style="width: 570px; height:350px"/>
