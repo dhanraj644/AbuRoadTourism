@@ -118,7 +118,6 @@ if($res)
 
 
             <!-- Form Start -->
-             <form action="">
 
              
             <div class="container-fluid pt-4 px-4">
@@ -151,8 +150,7 @@ if($res)
                                 </div>
                                 <div class="mb-3">
                                     <label for="" class="form-label">History</label>
-                                    <input type="text" class="form-control"  name="location"
-                                       >
+                                    <textarea name="" id="" cols="55" rows="5"></textarea>
                                        <div  class="form-text">
                                     </div>
 
@@ -178,17 +176,7 @@ if($res)
                                     </div>
 
                                 </div> 
-                                <button type="submit" name="add" value="add" class="btn btn-primary">ADD</button>
-                            </form>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-12 col-xl-6">
-                        <div class="bg-light rounded h-100 p-4">
-                            <h6 class="mb-4">Basic Form</h6>
-                          
-                                
-                            <div class="mb-3">
+                                <div class="mb-3">
                                     <label for="" class="form-label">image1</label>
                                     <input type="file" class="form-control"  name="location"
                                        >
@@ -231,40 +219,36 @@ if($res)
                                     </div>
 
                                 </div> <div class="mb-3">
-                                    <label for="" class="form-label">gallary1</label>
-                                    <input type="text" class="form-control"  name="location"
+                                    <label for="" class="form-label">slider1</label>
+                                    <input type="file" class="form-control"  name="location"
                                        >
                                        <div  class="form-text">
                                     </div>
 
                                 </div> <div class="mb-3">
-                                    <label for="" class="form-label">gallary2</label>
-                                    <input type="text" class="form-control"  name="location"
+                                    <label for="" class="form-label">slider2</label>
+                                    <input type="file" class="form-control"  name="location"
                                        >
                                        <div  class="form-text">
                                     </div>
 
                                 </div> <div class="mb-3">
-                                    <label for="" class="form-label">gallary3</label>
-                                    <input type="text" class="form-control"  name="location"
-                                       >
-                                       <div  class="form-text">
-                                    </div>
-
-                                </div> <div class="mb-3">
-                                    <label for="" class="form-label">gallary4</label>
-                                    <input type="text" class="form-control"  name="location"
+                                    <label for="" class="form-label">slider3</label>
+                                    <input type="file" class="form-control"  name="location"
                                        >
                                        <div  class="form-text">
                                     </div>
 
                                 </div> 
-
+                                <button type="submit" name="add" value="add" class="btn btn-primary">ADD</button>
+                            </form>
                         </div>
                     </div>
+
+                  
                     </div>
                     </div>  
-                    </form>
+                    
 <br>
                     <div class="col-12">
                         <div class="bg-light rounded h-100 p-4">
@@ -281,12 +265,6 @@ if($res)
                                             <th scope="col">photo</th>
                                             <th scope="col">360view</th>
                                             <th scope="col">video</th>
-                                            <th scope="col">img1</th>
-                                            <th scope="col">img2</th>
-                                            <th scope="col">img3</th>
-                                            <th scope="col">img4</th>
-                                            <th scope="col">img5</th>
-                                            <th scope="col">img6</th>
                                             <th scope="col">gallary1</th>
                                             <th scope="col">gallary2</th>
                                             <th scope="col">gallary3</th>
@@ -308,7 +286,9 @@ if($res)
                                             <td><?php echo $row['destinationname']?></td>
                                             <td><?php echo $row['name']?></td>
                                             <td><?php echo $row['imgbanner']?></td>
-                                            <td><?php echo $row['']?></td>
+                                           <td> <textarea name="" id="">
+                                            <?php echo $row['history']?>
+                                            </textarea></td>
                                             <td><?php echo $row['photo']?></td>
                                             <td><?php echo $row['360view']?></td>
                                             <td><?php echo $row['video']?></td>
@@ -318,12 +298,6 @@ if($res)
                                             <td><?php echo $row['img4']?></td>
                                             <td><?php echo $row['img5']?></td>
                                             <td><?php echo $row['img6']?></td>
-                                            <td><?php echo $row['gallary1']?></td>
-                                            <td><?php echo $row['gallary2']?></td>
-                                            <td><?php echo $row['gallary3']?></td>
-                                            <td><?php echo $row['gallary4']?></td>
-                                            <td><?php echo $row['gallary5']?></td>
-                                            <td><?php echo $row['gallary6']?></td>
                                             <td><?php echo $row['slider1']?></td>
                                             <td><?php echo $row['slider2']?></td>
                                             <td><?php echo $row['slider3']?></td>
