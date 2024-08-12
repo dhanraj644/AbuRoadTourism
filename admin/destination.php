@@ -24,6 +24,13 @@ if($res)
 }
 }
 
+if(isset($_POST['submit']) )
+{
+    $destname=$_POST['destinationname'];
+    $name=$_POST['name'];
+    
+
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -125,7 +132,7 @@ if($res)
                     <div class="col-sm-12 col-xl-6">
                         <div class="bg-light rounded h-100 p-4">
                             <h6 class="mb-4">Basic Form</h6>
-                            <form action="car.php" method="POST" enctype="multipart/form-data">
+                            <form action="" method="POST" enctype="multipart/form-data">
                                 <div class="mb-3">
                                     <label for="file" class="form-label">enter destination name</label>
                                     <input type="text" class="form-control" name="file" 
